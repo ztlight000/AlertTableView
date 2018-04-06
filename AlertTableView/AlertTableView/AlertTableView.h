@@ -51,8 +51,6 @@ typedef NSInteger ArrowAlignmentType;
 
 @property (nonatomic, assign) ArrowAlignmentType arrowAlignment; //箭头位置
 
-@property (nonatomic, assign) NSInteger notHiddenIndex;
-
 - (void)show;
 
 - (void)showInView:(UIView*)view;

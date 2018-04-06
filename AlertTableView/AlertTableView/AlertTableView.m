@@ -28,9 +28,7 @@
     self = [super initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
     
     _tableViewFrame = frame;
-    
-    _notHiddenIndex = NSNotFound;
-    
+        
     return self;
     
 }
@@ -195,15 +193,8 @@
     
     _selectBlock ? _selectBlock(indexPath) :nil;
     
-    if (_notHiddenIndex==indexPath.row) {
-        
-        return;
-        
-    }else{
-        
-        [self hidden];
-    }
-    
+    [self hidden];
+
 }
 
 
