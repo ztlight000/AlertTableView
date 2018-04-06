@@ -39,11 +39,10 @@ typedef NSInteger ArrowAlignmentType;
 
 @interface AlertTableView : UIView
 
-@property (nonatomic,assign)  CGRect tableViewFrame; //tableView的frame
 
 @property (nonatomic, assign) CGRect globalFrame; //AlertTableView的frame
 
-@property (nonatomic, copy) SelectAlertTableViewBlock selectBlock; //选中cell的回调
+@property (nonatomic,assign)  CGRect tableViewFrame; //tableView的frame
 
 @property (nonatomic, copy) TapCompletionBlock tapBlock; //点击当前AlertTableView的回调
 
@@ -51,12 +50,18 @@ typedef NSInteger ArrowAlignmentType;
 
 @property (nonatomic, assign) ArrowAlignmentType arrowAlignment; //箭头位置
 
+@property (nonatomic, copy) SelectAlertTableViewBlock selectBlock; //选中cell的回调
+
+//显示到window
 - (void)show;
 
+//显示到指定view
 - (void)showInView:(UIView*)view;
 
+//刷新数据
 - (void)reloadData;
 
+//隐藏
 - (void)hidden;
 
 @end

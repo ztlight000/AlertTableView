@@ -67,7 +67,7 @@
 - (void)setUpAlertTableView {
     
     //设置弹出选项view
-    AlertTableView *alertTableView = [[AlertTableView alloc] initWithFrame:CGRectMake(375 - 120, 64, 95, 128)];
+    AlertTableView *alertTableView = [[AlertTableView alloc] initWithFrame:CGRectMake(375 - 120, 64, 115, 128)];
     
     alertTableView.backgroundColor = [UIColor lightGrayColor];
     
@@ -118,9 +118,9 @@
     
     alertTableViewCell.tableTextLable.textColor = [UIColor whiteColor];
     
-    [alertTableViewCell setTableImageViewHidden:YES];
+//    [alertTableViewCell setTableImageViewHidden:YES];
 
-//    alertTableViewCell.tableImageView.image = [UIImage imageNamed:@"starlevelfull"]; //设置cell图标，并关掉setTableImageViewHidden
+    alertTableViewCell.tableImageView.image = [UIImage imageNamed:@"starlevelfull"]; //设置cell图标，并关掉setTableImageViewHidden
     
 }
 
